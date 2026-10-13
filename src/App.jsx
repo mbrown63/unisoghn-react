@@ -1,10 +1,10 @@
 import './App.css'
+import Header from './components/Header'
 
 function App() {
   return (
     <div>
-      <h1>Welcome to UNISOGHN</h1>
-      <p>Discover the music, story, and journey of UNISOGHN.</p>
+      <Header />
     </div>
   )
 }

@@ -2,12 +2,9 @@ function Navbar() {
   return (
     <nav>
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Gallery</a></li>
-        <li><a href="#">Music</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Events</a></li>
-        <li><a href="#">Artists</a></li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#assignments">Assignments</a></li>
+        <li><a href="#projects">Projects</a></li>
       </ul>
     </nav>
   )

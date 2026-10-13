@@ -3,7 +3,10 @@ import Navbar from './Navbar'
 function Header() {
   return (
     <header>
-      <h1>UNISOGHN</h1>
+    <div>
+        <h1>CSCE 242: HOMEPAGE</h1>
+        <h2>Mi'Kayla Brown</h2>
+      </div>
       <Navbar />
     </header>
   )
