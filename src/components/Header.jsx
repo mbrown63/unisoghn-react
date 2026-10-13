@@ -1,15 +1,11 @@
-import Navbar from './Navbar'
+import "./Header.css";
 
-function Header() {
-  return (
-    <header>
-    <div>
-        <h1>CSCE 242: HOMEPAGE</h1>
-        <h2>Mi'Kayla Brown</h2>
-      </div>
-      <Navbar />
-    </header>
-  )
-}
+const Header = () => {
+    return (
+        <header>
+            <h1>HI</h1>
+        </header>
+    );
+};
 
-export default Header
+export default Header;
