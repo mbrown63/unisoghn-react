@@ -1,3 +1,35 @@
-h1 {
-    color: green
-};
+.main-header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: black;
+    padding: 12px 40px;
+}
+
+.main-header img {
+    width: 150px;
+    height: auto;
+}
+
+.social-icons {
+    display: flex;
+    gap: 25px;
+    margin-left: auto;
+}
+
+.social-icons i {
+    color: white;
+    font-size: 24px;
+}
+
+/* Smaller Screens */
+@media only screen and (max-width: 1024px) {
+    .main-header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .social-icons {
+        margin-left: 0;
+    }
+}

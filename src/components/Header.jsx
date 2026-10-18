@@ -6,8 +6,12 @@ const Header = () => {
     return (
         <header className="main-header">
             <img src={logo} alt="logo"></img>
-            <h1>HI</h1>
             <Navigation />
+            <div className="social-icons">
+                <i className="fa-brands fa-instagram"></i>
+                <i className="fa-brands fa-tiktok"></i>
+                <i className="fa-brands fa-youtube"></i>
+            </div>
         </header>
     );
 };
