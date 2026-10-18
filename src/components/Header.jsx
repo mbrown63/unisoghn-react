@@ -1,9 +1,13 @@
 import "./Header.css";
+import logo from "./images/logo.jpg";
+import Navigation from "../navigation/Navigation";
 
 const Header = () => {
     return (
-        <header>
+        <header className="main-header">
+            <img src={logo} alt="logo"></img>
             <h1>HI</h1>
+            <Navigation />
         </header>
     );
 };
