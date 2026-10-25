@@ -1,8 +1,11 @@
 :root {
-  --main-color: #295095;
-  --accent-color: #6393e9;
-  --light-color: #ffffff;
-  --dark-color: #000000;
+  --black: #080706;
+  --red: #b51f1f;
+  --bright-red: #e32629;
+  --dark-red: #5c0b0b;
+  --cream: #e8d5bd;
+  --light-cream: #f0dfca;
+  --white: #ffffff;
 }
 
 html, body {

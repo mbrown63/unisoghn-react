@@ -1,6 +1,6 @@
 import "./Header.css";
 import logo from "./images/UNISOGHN-LOGO.jpg";
-import Navigation from "./Navigation";
+import Navigation from "../navigation/Navigation";
 
 const Header = () => {
     return (

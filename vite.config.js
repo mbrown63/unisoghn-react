@@ -1,8 +1,20 @@
 import react from '@vitejs/plugin-react'
-import { defineConfig } from 'vite'
+import { defineConfig, transformWithOxc } from 'vite'
 
-// https://vite.dev/config/
 export default defineConfig({
-  plugins: [react()],
+  plugins: [
+    {
+      name: 'transform-js-jsx',
+      enforce: 'pre',
+      async transform(code, id) {
+        if (id.endsWith('/src/index.js')) {
+          return transformWithOxc(code, id, {
+            lang: 'jsx',
+          })
+        }
+      },
+    },
+    react(),
+  ],
   base: '/unisoghn-react/',
 })
