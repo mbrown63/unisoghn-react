@@ -1,3 +1,5 @@
+import "./HomeEvents.css";
+
 const HomeEvents = () => {
     return (
         <section id="events">

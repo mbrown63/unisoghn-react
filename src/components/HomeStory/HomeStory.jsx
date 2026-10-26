@@ -1,8 +1,11 @@
+import "./HomeStory.css";
+import imagePath from "../../utils/images";
+
 const HomeStory = () => {
     return (
         <section id="story-preview">
             <div id="home-story-image">
-                <img src="/images/OurStoryimage.jpg" alt="UNISOGHN CONCERT" />
+                <img src={imagePath("OurStoryimage.jpg")} alt="UNISOGHN CONCERT" />
             </div>
 
             <div id="home-story">

@@ -1,0 +1,90 @@
+#artists-section {
+    min-width: 0;
+    padding: 25px;
+    position: relative;
+    background: var(--light-cream);
+    color: var(--black);
+}
+
+#artists-section h2 {
+    color: var(--red);
+    font-size: 12px;
+    margin: 0;
+}
+
+#artists-section h3 {
+    font: bold 28px Georgia, serif;
+    margin: 5px 0 15px;
+}
+
+#artists-section > a {
+    position: absolute;
+    top: 35px;
+    right: 25px;
+    color: var(--red);
+    text-decoration: none;
+    font-size: 11px;
+}
+
+#voice-cards {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 7px;
+}
+
+.voice-card {
+    min-width: 0;
+    border: 1px solid #0002;
+}
+
+.voice-card img {
+    display: block;
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.voice-card h4 {
+    margin: 10px 8px 4px;
+    font-size: 13px;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+.voice-card p {
+    margin: 0 8px 15px;
+    font-size: 10px;
+}
+
+#voice-cards > a {
+    grid-column: 1 / -1;
+    margin-top: 5px;
+    color: var(--red);
+    text-decoration: none;
+    font-size: 10px;
+}
+
+@media (max-width: 1000px) {
+    #artists-section {
+        padding: 20px;
+    }
+
+    .voice-card img {
+        height: 140px;
+    }
+}
+
+@media (max-width: 600px) {
+    #artists-section {
+        padding: 25px 20px;
+    }
+
+    #voice-cards {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px;
+    }
+
+    .voice-card img {
+        height: 200px;
+    }
+}

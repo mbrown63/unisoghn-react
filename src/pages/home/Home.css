@@ -1,0 +1,62 @@
+#home {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+#middle {
+    display: grid;
+    grid-template-columns: 38% 30% 32%;
+    align-items: stretch;
+    width: 100%;
+    background: var(--light-cream);
+    color: var(--black);
+}
+
+#middle > #artists-section, #middle > #the-sound, #middle > #pictures {
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#middle #sound-top, #middle #picture-gallery, #middle #sound-info {
+    min-width: 0;
+}
+
+#middle #sound-top {
+    width: 100%;
+}
+
+#middle #album-cover-image {
+    flex-shrink: 0;
+}
+
+#middle #pictures {
+    display: flex;
+    align-items: center;
+}
+
+#middle .polaroid {
+    flex-shrink: 0;
+}
+
+@media (max-width: 1000px) {
+    #middle {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #middle > #pictures {
+        grid-column: 1 / -1;
+    }
+}
+
+@media (max-width: 600px) {
+    #middle {
+        grid-template-columns: 1fr;
+    }
+
+    #middle > #pictures {
+        grid-column: auto;
+    }
+}

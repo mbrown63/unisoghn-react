@@ -1,3 +1,5 @@
+import "./EventCard.css";
+
 const EventCard = ({ date, year, city, venue, time }) => {
     return (
         <div className="tour">

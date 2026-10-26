@@ -1,0 +1,133 @@
+#footer {
+    display: grid;
+    grid-template-columns: 150px 1fr auto auto;
+    align-items: center;
+    gap: 2rem; /* rem is a CSS unit used to measure size and spacing. */
+    padding: 1.25rem 2.5rem;
+    background: var(--black);
+    color: var(--white);
+}
+
+#footer a {
+    color: inherit;
+    text-decoration: none;
+    font-size: 0.65rem;
+}
+
+#footer-logo-image img {
+    display: block;
+    width: 100%;
+}
+
+#footer-links, #newsletter, #newsletter-form {
+    display: flex;
+    align-items: center;
+}
+
+#footer-links {
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+#newsletter {
+    gap: 1.25rem;
+    padding-left: 1.5rem;
+    border-left: 1px solid var(--red);
+}
+
+#newsletter-info > * {
+    margin: 3px 0;
+}
+
+#newsletter-info h4 {
+    color: var(--bright-red);
+    font-size: 9px;
+}
+
+#newsletter-info h2 {
+    font: 18px Georgia, serif;
+}
+
+#newsletter-info p, #newsletter-form input {
+    font-size: 9px;
+}
+
+#newsletter-form input {
+    width: 160px;
+    padding: 10px;
+    background: none;
+    border: 1px solid #555;
+    color: inherit;
+}
+
+#newsletter-form button {
+    padding: 10px;
+    border: 0;
+    background: var(--dark-red);
+    color: inherit;
+}
+
+#footer > p {
+    font-size: 8px;
+    line-height: 1.6;
+    text-align: right;
+}
+
+@media (max-width: 1000px) {
+    #footer {
+        grid-template-columns: 110px 1fr auto auto;
+        gap: 15px;
+        padding: 18px 25px;
+    }
+
+    #footer-links,
+    #newsletter {
+        gap: 10px;
+    }
+
+    #newsletter {
+        padding-left: 12px;
+    }
+
+    #newsletter-form input {
+        width: 120px;
+    }
+}
+
+@media (max-width: 600px) {
+    #footer {
+        grid-template-columns: 1fr;
+        justify-items: start;
+        gap: 20px;
+        padding: 25px 20px;
+    }
+
+    #footer-logo-image {
+        width: 120px;
+    }
+
+    #footer-links {
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+
+    #newsletter {
+        width: 100%;
+        border: 0;
+        border-top: 1px solid var(--red);
+        padding: 20px 0 0;
+    }
+
+    #newsletter-form {
+        flex: 1;
+    }
+
+    #newsletter-form input {
+        width: 100%;
+        min-width: 0;
+    }
+
+    #footer > p {
+        text-align: left;
+    }
+}

@@ -1,9 +1,10 @@
 import Hero from "../../components/hero/Hero";
-import HomeArtists from "../../components/homeArtists/HomeArtists";
-import HomeMusic from "../../components/homeMusic/HomeMusic";
+import HomeArtists from "../../components/HomeArtists/HomeArtists";
+import HomeMusic from "../../components/HomeMusic/HomeMusic";
 import HomeGallery from "../../components/HomeGallery/HomeGallery";
 import HomeEvents from "../../components/HomeEvents/HomeEvents";
 import HomeStory from "../../components/HomeStory/HomeStory";
+import "./Home.css";
 
 const Home = () => {
     return (
@@ -17,7 +18,6 @@ const Home = () => {
             </section>
 
             <HomeEvents />
-
             <HomeStory />
         </div>
     );

@@ -1,0 +1,162 @@
+#live {
+    display: grid;
+    align-items: center;
+    min-height: 300px;
+    background: url("/images/tourimage.jpg") center / cover no-repeat;
+    color: var(--white);
+}
+
+#live-info {
+    width: 40%;
+    padding: 40px 50px;
+    transform: rotate(-4deg);
+}
+
+#live-info h1 {
+    font: bold 55px/.9 Georgia, serif;
+    margin: 0 0 15px;
+}
+
+#live-info p {
+    font: 14px/1.5 Georgia, serif;
+    letter-spacing: 2px;
+    margin: 0;
+}
+
+#tour {
+    display: grid;
+    grid-template-columns: 65% 35%;
+    background: var(--light-cream);
+    color: var(--black);
+}
+
+#tour-info {
+    min-width: 0;
+    padding: 30px 40px;
+}
+
+#tour-info h2, #past-events h2 {
+    font-family: Georgia, serif;
+    margin: 0 0 8px;
+}
+
+#tour-info h2 {
+    font-size: 28px;
+}
+
+#tour-info > p {
+    font-size: 11px;
+    margin: 0 0 20px;
+}
+
+#view-galleryimage {
+    height: 250px;
+    margin-top: 20px;
+}
+
+#view-galleryimage img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#later {
+    min-width: 0;
+    padding: 65px 30px 30px;
+}
+
+#past-events {
+    min-height: 200px;
+    padding: 25px;
+    color: var(--white);
+    background: url("/images/energyimage.jpg") center / cover no-repeat;
+}
+
+#past-events h2 {
+    font-size: 22px;
+}
+
+#past-events p {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+#book {
+    padding: 35px 0;
+}
+
+#book h2 {
+    font-size: 26px;
+}
+
+#book p {
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+#past-events a, #book a {
+    display: inline-block;
+    padding: 12px 20px;
+    background: var(--dark-red);
+    color: var(--white);
+    text-decoration: none;
+    font-size: 12px;
+}
+
+@media (max-width: 1000px) {
+    #live {
+        min-height: 260px;
+    }
+
+    #live-info {
+        padding: 30px;
+    }
+
+    #live-info h1 {
+        font-size: 45px;
+    }
+
+    #tour-info {
+        padding: 25px;
+    }
+
+    #later {
+        padding: 45px 20px 20px;
+    }
+
+    #book p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 600px) {
+    #live {
+        min-height: 280px;
+    }
+
+    #live-info {
+        width: 100%;
+        padding: 30px 20px;
+    }
+
+    #live-info h1 {
+        font-size: 40px;
+    }
+
+    #tour {
+        grid-template-columns: 1fr;
+    }
+
+    #tour-info, #later {
+        padding: 30px 20px;
+    }
+
+    #view-galleryimage {
+        height: 220px;
+    }
+
+    #past-events {
+        min-height: 220px;
+    }
+}

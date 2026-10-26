@@ -1,0 +1,146 @@
+#malik-hero {
+    display: grid;
+    align-items: center;
+    min-height: 430px;
+    background: url("/images/malik-hero.jpg") right center / cover no-repeat;
+}
+
+#malik-hero-info {
+    width: 38%;
+    padding: 50px;
+}
+
+#malik-hero-info > p, #malik-info h4 {
+    color: var(--bright-red);
+    font-size: 13px;
+    letter-spacing: 5px;
+}
+
+#malik-hero-info h1, #malik-info h2 {
+    font-family: Georgia, serif;
+    line-height: 1;
+}
+
+#malik-hero-info h1 {
+    font-size: 80px;
+    margin: 0 0 15px;
+}
+
+#malik-hero-info h3 {
+    font-size: 14px;
+    font-weight: normal;
+    letter-spacing: 6px;
+    line-height: 1.4;
+}
+
+#malik-story {
+    display: grid;
+    grid-template-columns: 45% 1fr;
+    align-items: center;
+    gap: 70px;
+    padding: 45px 6%;
+    min-height: 400px;
+    background: var(--light-cream);
+    color: var(--black);
+}
+
+#malik-polaroid {
+    padding: 15px 15px 35px;
+    background: #f8ead8;
+    transform: rotate(-3deg);
+    box-shadow: 0 5px 12px #0004;
+}
+
+#malik-polaroid img {
+    display: block;
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+}
+
+#malik-polaroid p {
+    font: bold italic 20px Georgia, serif;
+    text-align: center;
+    margin: 15px 0 0;
+}
+
+#malik-info {
+    min-width: 0;
+}
+
+#malik-info h4 {
+    color: var(--red);
+    font-size: 12px;
+    letter-spacing: 4px;
+}
+
+#malik-info h2 {
+    font-size: 55px;
+    margin: 0 0 15px;
+}
+
+#malik-info p {
+    font-size: 13px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+@media (max-width: 1000px) {
+    #malik-hero {
+        min-height: 380px;
+    }
+
+    #malik-hero-info {
+        padding: 35px;
+    }
+
+    #malik-hero-info h1 {
+        font-size: 60px;
+    }
+
+    #malik-story {
+        gap: 30px;
+        padding: 40px 5%;
+    }
+
+    #malik-polaroid img {
+        height: 230px;
+    }
+
+    #malik-info h2 {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 600px) {
+    #malik-hero {
+        min-height: 330px;
+        background-position: center;
+    }
+
+    #malik-hero-info {
+        width: 100%;
+        padding: 35px 20px;
+    }
+
+    #malik-hero-info h1 {
+        font-size: 52px;
+    }
+
+    #malik-story {
+        grid-template-columns: 1fr;
+        padding: 35px 20px;
+    }
+
+    #malik-polaroid {
+        width: 85%;
+    }
+
+    #malik-polaroid img {
+        height: 250px;
+    }
+
+    #malik-info h2 {
+        font-size: 36px;
+    }
+}

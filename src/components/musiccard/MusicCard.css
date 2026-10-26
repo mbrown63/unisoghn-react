@@ -1,0 +1,36 @@
+.music-card {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    padding: 10px;
+    border: 1px solid #cdbba6;
+    text-align: center;
+}
+
+.music-card img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+}
+
+.music-card h3 {
+    margin: 10px 0 3px;
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.music-card p {
+    margin: 0 0 12px;
+    font-size: 10px;
+}
+
+.music-card a {
+    display: block;
+    margin-top: auto;
+    padding: 10px;
+    background: var(--dark-red);
+    color: var(--white);
+    text-decoration: none;
+    font-size: 15px;
+}

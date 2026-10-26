@@ -1,0 +1,58 @@
+.voice-cards {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    border: 1px solid #cdbba6;
+    padding-bottom: 12px;
+}
+
+.voice-cards img {
+    display: block;
+    width: 100%;
+    height: 330px;
+    object-fit: cover;
+}
+
+.voice-cards h4, .voice-cards p {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.voice-cards h4 {
+    margin-top: 10px;
+    margin-bottom: 3px;
+    font-size: 14px;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+.voice-cards p {
+    font-size: 10px;
+    margin-top: 0;
+}
+
+.voice-cards span {
+    display: none;
+}
+
+.voice-cards a {
+    align-self: flex-start;
+    margin: auto 10px 0;
+    padding: 10px 15px;
+    background: var(--dark-red);
+    color: var(--white);
+    text-decoration: none;
+    font-size: 9px;
+}
+
+@media (max-width: 1000px) {
+    .voice-cards img {
+        height: 250px;
+    }
+}
+
+@media (max-width: 600px) {
+    .voice-cards img {
+        height: 220px;
+    }
+}

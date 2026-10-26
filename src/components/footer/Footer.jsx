@@ -1,11 +1,11 @@
+import "./Footer.css";
+import imagePath from "../../utils/images";
+
 const Footer = () => {
     return (
         <footer id="footer">
             <div id="footer-logo-image">
-                <img
-                    src="/images/footerLOGOimage.jpg"
-                    alt="UNISOGHN LOGO"
-                />
+                <img src={imagePath("footerLOGOimage.jpg")} alt="UNISOGHN LOGO" />
             </div>
 
             <div id="footer-links">

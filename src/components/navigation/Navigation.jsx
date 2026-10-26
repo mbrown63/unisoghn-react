@@ -1,15 +1,16 @@
 import "./Navigation.css";
+import { Link } from "react-router-dom";
 
 const Navigation = () => {
     return (
         <nav className="main-nav">
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Gallery</a></li>
-                <li><a href="#">Music</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Events</a></li>
-                <li><a href="#">Artists</a></li>
+                <li><Link to="/">Home</Link></li>
+                <li><Link to="/gallery">Gallery</Link></li>
+                <li><Link to="/music">Music</Link></li>
+                <li><Link to="/about">About</Link></li>
+                <li><Link to="/events">Events</Link></li>
+                <li><Link to="/artists">Artists</Link></li>
             </ul>
         </nav>
     );

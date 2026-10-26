@@ -1,0 +1,186 @@
+/* Artists Hero */
+#vision {
+    display: grid;
+    align-items: center;
+    min-height: 430px;
+    background: url("/images/aboutimage.jpg") right center / cover no-repeat;
+}
+
+#one-vision {
+    width: 42%;
+    padding: 50px;
+    transform: rotate(-4deg);
+}
+
+#one-vision h1,#one-vision h3,#voice h2, #talent-info h2 {
+    font-family: Georgia, serif;
+}
+
+#one-vision h1 {
+    font-size: 65px;
+    line-height: .9;
+    margin: 0;
+}
+
+#one-vision h3 {
+    font-size: 18px;
+    letter-spacing: 4px;
+    line-height: 1.5;
+    margin-top: 25px;
+}
+
+/* Artists Section */
+#voice,#talent {
+    background: var(--light-cream);
+    color: var(--black);
+}
+
+#voice {
+    padding: 30px 40px;
+}
+
+#voice h2 {
+    font-size: 60px;
+    margin: 0;
+}
+
+#voice > p {
+    font-size: 15px;
+}
+
+#artists-links {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: -65px;
+}
+
+#artists-links a {
+    padding: 12px 15px;
+    border: 1px solid #cdbba6;
+    color: inherit;
+    text-decoration: none;
+    font-size: 10px;
+}
+
+#voice-card {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    margin-top: 35px;
+}
+
+/* Different Talents */
+#talent {
+    display: grid;
+    grid-template-columns: 55% 45%;
+    min-height: 250px;
+}
+
+#talents-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+#talent-info {
+    align-self: center;
+    padding: 45px 40px;
+}
+
+#talent-info h2 {
+    font-size: 25px;
+    margin: 0 0 10px;
+}
+
+#talent-info p {
+    font-size: 11px;
+    line-height: 1.6;
+}
+
+#talent-info a {
+    display: inline-block;
+    padding: 11px 20px;
+    background: var(--dark-red);
+    color: var(--white);
+    text-decoration: none;
+    font-size: 10px;
+}
+
+/* Tablet */
+@media (max-width: 1000px) {
+    #one-vision {
+        padding: 35px;
+    }
+
+    #one-vision h1 {
+        font-size: 50px;
+    }
+
+    #voice {
+        padding: 25px;
+    }
+
+    #voice h2 {
+        font-size: 42px;
+    }
+
+    #artists-links {
+        justify-content: flex-start;
+        margin-top: 15px;
+        gap: 6px;
+    }
+
+    #voice-card {
+        gap: 8px;
+        margin-top: 20px;
+    }
+
+    #talent-info {
+        padding: 35px 30px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    #vision {
+        min-height: 330px;
+        background-position: center;
+    }
+
+    #one-vision {
+        width: 100%;
+        padding: 35px 20px;
+    }
+
+    #one-vision h1 {
+        font-size: 42px;
+    }
+
+    #voice {
+        padding: 25px 20px;
+    }
+
+    #voice h2 {
+        font-size: 34px;
+    }
+
+    #voice-card {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    #talent {
+        grid-template-columns: 1fr;
+    }
+
+    #talents-image {
+        height: 300px;
+    }
+
+    #talent-info {
+        padding: 30px 20px;
+    }
+}

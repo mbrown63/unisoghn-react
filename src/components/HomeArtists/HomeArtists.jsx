@@ -1,33 +1,35 @@
-import HomeArtistCard from "./homeArtistCard/HomeArtistCard";
+import HomeArtistCard from "../HomeArtistCard/HomeArtistCard";
+import imagePath from "../../utils/images";
+import "./HomeArtists.css";
 
 const HomeArtists = () => {
     return (
         <div id="artists-section">
             <h2>▶ THE VOICES</h2>
             <h3>OUR ARTISTS</h3>
-            <a href="/story-preview">OUR STORY→</a>
+            <a href="/story-preview">OUR STORY →</a>
 
             <div id="voice-cards">
                 <HomeArtistCard
-                    image="/images/malik.jpg"
+                    image={imagePath("malik.jpg")}
                     name="Malik"
                     role="Vocals / Production"
                 />
 
                 <HomeArtistCard
-                    image="/images/aria.jpg"
+                    image={imagePath("aria.jpg")}
                     name="Aria"
                     role="Vocals"
                 />
 
                 <HomeArtistCard
-                    image="/images/jordan.jpg"
+                    image={imagePath("jordan.jpg")}
                     name="Jordan"
                     role="Vocals / Writing"
                 />
 
                 <HomeArtistCard
-                    image="/images/nia.jpg"
+                    image={imagePath("nia.jpg")}
                     name="Nia"
                     role="Vocals"
                 />

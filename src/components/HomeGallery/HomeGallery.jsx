@@ -1,3 +1,7 @@
+import imagePath from "../../utils/images";
+import { Link } from "react-router-dom";
+import "./HomeGallery.css";
+
 const HomeGallery = () => {
     return (
         <section id="pictures">
@@ -5,13 +9,19 @@ const HomeGallery = () => {
                 <p>▶ GALLERY</p>
                 <h2>THROUGH THE LENS</h2>
                 <p>
-                    From the stage to the studio and everything in between. Explore the moments, memories, and energy that bring UNISOGHN to life.
+                    From the stage to the studio and everything in between.
+                    Explore the moments, memories, and energy that bring
+                    UNISOGHN to life.
                 </p>
-                <a href="/gallery">VIEW GALLERY →</a>
+
+                <Link to="/gallery">VIEW GALLERY →</Link>
             </div>
 
             <div className="polaroid">
-                <img src="/images/group-photo.jpg" alt="UNISOGHN group photo" />
+                <img
+                    src={imagePath("group-photo.jpg")}
+                    alt="UNISOGHN group photo"
+                />
                 <p>MORE THAN MUSIC</p>
             </div>
         </section>

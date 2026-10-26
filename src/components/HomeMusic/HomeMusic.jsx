@@ -1,4 +1,6 @@
 import HomeSong from "../homeSong/HomeSong";
+import "./HomeMusic.css";
+import imagePath from "../../utils/images";
 
 const HomeMusic = () => {
     return (
@@ -16,7 +18,7 @@ const HomeMusic = () => {
                 </div>
 
                 <div id="album-cover-image">
-                    <img src="/images/albumcover.jpg" alt="Album Cover" />
+                    <img src={imagePath("albumcover.jpg")} alt="Album Cover" />
                 </div>
             </div>
 

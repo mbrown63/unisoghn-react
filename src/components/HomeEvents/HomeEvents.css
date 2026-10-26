@@ -1,0 +1,88 @@
+#events {
+    display: flex;
+    background: var(--black);
+    color: var(--white);
+    min-height: 240px;
+}
+
+#events-info {
+    width: 58%;
+    min-height: 300px;
+    background-image: url("/images/eventsimage.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+}
+
+#plan {
+    width: 42%;
+    background-image: url("/images/planningimage.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+}
+
+#events-info h2, #plan h1 {
+    font-family: Georgia, serif;
+    margin: 5px 0 10px;
+}
+
+#events-info h2 {
+    font-size: 35px;
+}
+
+#plan h1 {
+    font-size: 25px;
+}
+
+#events-info p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+#plan p {
+    font-size: 10px;
+    line-height: 1.6;
+}
+
+#events-info > p:first-child {
+    color: var(--cream);
+    margin: 0;
+}
+
+#plan > p:first-child {
+    color: var(--bright-red);
+}
+
+#events-info a, #plan a {
+    background: var(--dark-red);
+    color: var(--white);
+    text-decoration: none;
+    padding: 11px 18px;
+    font-size: 10px;
+    width: fit-content;
+    margin-top: 8px;
+}
+
+@media (max-width: 1000px) {
+    #events-info, #plan {
+        padding: 25px;
+    }
+}
+
+@media (max-width: 600px) {
+    #events {
+        flex-direction: column;
+    }
+
+    #events-info, #plan {
+        width: 100%;
+        padding: 30px 20px;
+    }
+}

@@ -1,3 +1,5 @@
+import "./ArtistCard.css";
+
 const ArtistCard = ({ image, name, role, quote, link }) => {
     return (
         <div className="voice-cards">

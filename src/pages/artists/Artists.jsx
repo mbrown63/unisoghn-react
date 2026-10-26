@@ -1,4 +1,6 @@
-import ArtistCard from "./../components/artistcard/ArtistCard";
+import ArtistCard from "../../components/artistCard/ArtistCard";
+import imagePath from "../../utils/images";
+import "./Artists.css";
 
 const Artists = () => {
     return (
@@ -6,9 +8,12 @@ const Artists = () => {
             <section id="vision">
                 <div id="one-vision">
                     <h1>THE ARTISTS</h1>
-                    <h3>DIFFERENT VOICES.<br />ONE VISION.</h3>
+                    <h3>
+                        DIFFERENT VOICES.<br />ONE VISION.
+                    </h3>
                 </div>
             </section>
+
             <section id="voice">
                 <h2>MEET THE ARTISTS</h2>
                 <p>FOUR UNIQUE VOICES. DIFFERENT STORIES.SAME MISSION.</p>
@@ -23,7 +28,7 @@ const Artists = () => {
 
                 <div id="voice-card">
                     <ArtistCard
-                        image="/images/malik.jpg"
+                        image={imagePath("malik.jpg")}
                         name="Malik"
                         role="Vocals / Production"
                         quote="REAL SOUNDS. REAL LIFE."
@@ -31,7 +36,7 @@ const Artists = () => {
                     />
 
                     <ArtistCard
-                        image="/images/aria.jpg"
+                        image={imagePath("aria.jpg")}
                         name="Aria"
                         role="Vocals"
                         quote="SOUL. POWER. TRUTH."
@@ -39,7 +44,7 @@ const Artists = () => {
                     />
 
                     <ArtistCard
-                        image="/images/jordan.jpg"
+                        image={imagePath("jordan.jpg")}
                         name="Jordan"
                         role="Vocals / Writing"
                         quote="REAL STORIES. LASTING IMPACT."
@@ -47,7 +52,7 @@ const Artists = () => {
                     />
 
                     <ArtistCard
-                        image="/images/nia.jpg"
+                        image={imagePath("nia.jpg")}
                         name="Nia"
                         role="Vocals"
                         quote="BEAUTY. STRENGTH. PURPOSE."
@@ -55,14 +60,19 @@ const Artists = () => {
                     />
                 </div>
             </section>
+
             <section id="talent">
                 <div id="talents-image">
-                    <img src="/images/talents-image.jpg" alt="talents image" />
+                    <img
+                        src={imagePath("talents-image.jpg")} alt="talents image" />
                 </div>
+
                 <div id="talent-info">
-                    <h2>DIFFERENT TALENTS.<br />SAME PURPOSE.</h2>
+                    <h2>
+                        DIFFERENT TALENTS.<br />SAME PURPOSE.
+                    </h2>
                     <p>
-                        Each artist brings their own sound.<br /> energy. and perspective but together.<br /> they create something bigger than<br /> any one of us.
+                        Each artist brings their own sound.<br /> energy. and perspective - but together.<br /> they create something bigger than<br />any one of us.
                     </p>
                     <a href="/story-preview">OUR STORY →</a>
                 </div>

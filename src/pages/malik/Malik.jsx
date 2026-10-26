@@ -1,3 +1,6 @@
+import "./Malik.css";
+import imagePath from "../../utils/images";
+
 const Malik = () => {
     return (
         <>
@@ -6,16 +9,14 @@ const Malik = () => {
                     <p>▶ OUR ARTISTS</p>
                     <h1>MALIK</h1>
                     <h3>
-                        A DIFFERENT<br />
-                        PERSPECTIVE.<br />
-                        SAME VISION.
+                        A DIFFERENT<br />PERSPECTIVE.<br /> SAME VISION.
                     </h3>
                 </div>
             </section>
 
             <section id="malik-story">
                 <div id="malik-polaroid">
-                    <img src="/images/malik-studio.jpg" alt="Malik in the studio" />
+                    <img src={imagePath("malik-studio.jpg")} alt="Malik in the studio" />
                     <p>MALIK</p>
                 </div>
                 
