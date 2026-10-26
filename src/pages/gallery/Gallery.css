@@ -12,6 +12,7 @@
     font-size: 14px;
     font-weight: normal;
     letter-spacing: 4px;
+    margin: 0 0 12px;
 }
 
 #gallery-info h2::before {
@@ -19,28 +20,52 @@
 }
 
 #gallery-info h3 {
-    font: bold 58px Georgia, serif;
-    margin: 10px 0;
+    font-family: Georgia, serif;
+    font-size: 58px;
+    margin: 0 0 8px;
 }
 
 #gallery-info p {
     font-size: 16px;
+    margin: 0;
 }
 
 #group {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(6, minmax(0, 1fr));
     gap: 18px;
     padding: 0 4% 45px;
 }
 
+#group > * {
+    position: relative;
+    grid-column: span 2;
+    height: 315px;
+    min-width: 0;
+    overflow: hidden;
+    background: var(--black);
+}
+
+#group > :nth-child(-n+2) {
+    grid-column: span 3;
+    height: 380px;
+}
+
 @media (max-width: 1000px) {
+    #gallery-info h3 {
+        font-size: 45px;
+    }
+
     #group {
         gap: 12px;
     }
 
-    #gallery-info h3 {
-        font-size: 45px;
+    #group > * {
+        height: 250px;
+    }
+
+    #group > :nth-child(-n+2) {
+        height: 300px;
     }
 }
 
@@ -49,13 +74,22 @@
         padding: 30px 20px 15px;
     }
 
+    #gallery-info h3 {
+        font-size: 36px;
+    }
+
     #group {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, minmax(0, 1fr));
         gap: 8px;
         padding: 0 20px 30px;
     }
 
-    #gallery-info h3 {
-        font-size: 36px;
+    #group > *, #group > :nth-child(-n+2) {
+        grid-column: span 1;
+        height: 230px;
+    }
+
+    #group > :last-child {
+        grid-column: span 2;
     }
 }

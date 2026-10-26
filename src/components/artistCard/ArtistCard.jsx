@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./ArtistCard.css";
 
 const ArtistCard = ({ image, name, role, quote, link }) => {
@@ -7,7 +8,7 @@ const ArtistCard = ({ image, name, role, quote, link }) => {
             <h4>{name}</h4>
             <p>{role}</p>
             <span>{quote}</span>
-            <a href={link}>VIEW PROFILE →</a>
+            <Link to={link}>VIEW PROFILE →</Link>
         </div>
     );
 };
