@@ -12,6 +12,8 @@ import Events from "./pages/events/Events";
 import Artists from "./pages/artists/Artists";
 import Malik from "./pages/malik/Malik";
 import Listings from "./pages/listings/Listings";
+import Booking from "./pages/bookingform/Booking";
+import Preview from "./pages/preview/Preview";
 
 const App = () => {
     return (
@@ -26,6 +28,8 @@ const App = () => {
                     <Route path="artists" element={<Artists />} />
                     <Route path="malik" element={<Malik />} />
                     <Route path="listings" element={<Listings />} />
+                    <Route path="booking" element={<Booking />} />
+                    <Route path="preview" element={<Preview />} />
                 </Route>
             </Routes>
         </HashRouter>

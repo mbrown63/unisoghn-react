@@ -14,12 +14,14 @@
 
 #one-vision h1,#one-vision h3,#voice h2, #talent-info h2 {
     font-family: Georgia, serif;
+    
 }
 
 #one-vision h1 {
     font-size: 65px;
     line-height: .9;
     margin: 0;
+    color: var(--white);
 }
 
 #one-vision h3 {
@@ -27,6 +29,7 @@
     letter-spacing: 4px;
     line-height: 1.5;
     margin-top: 25px;
+    color: var(--white);
 }
 
 /* Artists Section */

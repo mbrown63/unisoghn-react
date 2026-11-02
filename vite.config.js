@@ -16,5 +16,12 @@ export default defineConfig({
     },
     react(),
   ],
+  optimizeDeps: {
+    rolldownOptions: {
+      moduleTypes: {
+        '.js': 'jsx',
+      },
+    },
+  },
   base: '/unisoghn-react/',
 })

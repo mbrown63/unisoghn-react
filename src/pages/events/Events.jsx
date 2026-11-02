@@ -84,7 +84,7 @@ const Events = () => {
                             Interested in booking UNISOGHN for your event?
                             Let's make it happen.
                         </p>
-                        <Link to="/booking-preview">BOOK NOW →</Link>
+                        <Link to="/booking">BOOK NOW →</Link>
                     </div>
                 </section>
             </section>

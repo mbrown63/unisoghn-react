@@ -1,4 +1,5 @@
 import MusicCard from "../../components/musiccard/MusicCard";
+import AudioPlayer from "../../components/audioPlayer/AudioPlayer";
 import imagePath from "../../utils/images";
 import "./Music.css";
 
@@ -94,12 +95,7 @@ const Music = () => {
                     <p>Latest Single • 2025</p>
 
                     <div id="music-player">
-                        <div id="player-bar">
-                            <button id="play-button">▶</button>
-                            <span id="current-time">0:00</span>
-                            <div id="music-waveform"></div>
-                            <span id="total-time">3:42</span>
-                        </div>
+                        <AudioPlayer song="the-sound.mp3" />
 
                         <div id="track-list">
                             {tracks.map((track) => (

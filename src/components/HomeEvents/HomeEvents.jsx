@@ -21,7 +21,7 @@ const HomeEvents = () => {
                     Interested in bringing UNISOGHN to your event?<br />
                     Send us an email, and our team will get back to you.
                 </p>
-                <a href="/booking-preview">BOOK NOW →</a>
+                <a href="/booking">BOOK NOW →</a>
             </div>
         </section>
     );

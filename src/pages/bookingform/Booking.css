@@ -1,0 +1,177 @@
+#booking {
+    min-height: 430px;
+    background: url("/images/booking-hero.jpg") center 20% / cover no-repeat;
+    color: var(--white);
+}
+
+#booking-info {
+    width: 42%;
+    min-height: 430px;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#booking-info h3, #request-info h4 {
+    color: var(--bright-red);
+    font-size: 13px;
+    font-weight: normal;
+    letter-spacing: 5px;
+    margin: 0 0 12px;
+}
+
+#booking-info h1, #request-info h2 {
+    font-family: Georgia, serif;
+    line-height: .9;
+    margin: 0 0 20px;
+}
+
+#booking-info h1 {
+    font-size: 65px;
+}
+
+#booking-info p, #request-info p {
+    font-size: 13px;
+    line-height: 1.6;
+    margin: 0 0 18px;
+}
+
+#request {
+    display: flex;
+    align-items: flex-start;
+    gap: 80px;
+    padding: 50px 6%;
+    background: var(--light-cream);
+    color: var(--black);
+}
+
+#request-info {
+    width: 40%;
+}
+
+#request-info h4 {
+    color: var(--red);
+    font-size: 12px;
+    letter-spacing: 4px;
+}
+
+#request-info h2 {
+    font-size: 45px;
+    line-height: 1;
+}
+
+#booking-form {
+    width: 60%;
+}
+
+#booking-form .input {
+    margin-bottom: 18px;
+}
+
+#booking-form label {
+    display: block;
+    font-size: 10px;
+    letter-spacing: 2px;
+    margin-bottom: 7px;
+}
+
+#booking-form input, #booking-form textarea {
+    width: 100%;
+    padding: 10px;
+    background: transparent;
+    border: 1px solid #b9a996;
+    outline: none;
+    font-size: 12px;
+}
+
+#booking-form input {
+    height: 42px;
+}
+
+#booking-form textarea {
+    font-family: Arial, sans-serif;
+    resize: none;
+}
+
+#send-request {
+    padding: 13px 22px;
+    background: var(--dark-red);
+    color: var(--white);
+    border: none;
+    font-size: 10px;
+    cursor: pointer;
+}
+
+#send-request:disabled {
+    opacity: .6;
+    cursor: not-allowed;
+}
+
+#form-result {
+    font-size: 12px;
+    margin-top: 12px;
+}
+
+/* Smaller Screens */
+@media (max-width: 1000px) {
+    #booking, #booking-info {
+        min-height: 380px;
+    }
+
+    #booking-info {
+        width: 45%;
+        padding: 40px;
+    }
+
+    #booking-info h1 {
+        font-size: 52px;
+    }
+
+    #request {
+        gap: 40px;
+        padding: 40px 5%;
+    }
+
+    #request-info {
+        width: 35%;
+    }
+
+    #request-info h2 {
+        font-size: 38px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    #booking, #booking-info {
+        min-height: 330px;
+    }
+
+    #booking {
+        background-position: center;
+    }
+
+    #booking-info {
+        width: 100%;
+        padding: 35px 20px;
+    }
+
+    #booking-info h1 {
+        font-size: 45px;
+    }
+
+    #request {
+        flex-direction: column;
+        gap: 30px;
+        padding: 35px 20px;
+    }
+
+    #request-info, #booking-form {
+        width: 100%;
+    }
+
+    #request-info h2 {
+        font-size: 34px;
+    }
+}

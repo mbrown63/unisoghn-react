@@ -18,6 +18,7 @@ const Gallery = () => {
                     image={imagePath("studioimage.jpg")}
                     title="STUDIO"
                     id="studio-image"
+                    link="/preview"
                     description="UNISOGHN brings their ideas together in the studio, turning individual creativity into one sound."
                 />
 

@@ -1,4 +1,5 @@
 import HomeSong from "../homeSong/HomeSong";
+import AudioPlayer from "../audioPlayer/AudioPlayer";
 import "./HomeMusic.css";
 import imagePath from "../../utils/images";
 
@@ -22,10 +23,7 @@ const HomeMusic = () => {
                 </div>
             </div>
 
-            <div id="audio-player">
-                <button id="sound-play-button">▶</button>
-                <div id="waveform" />
-            </div>
+            <AudioPlayer song="song.mp3" home={true} />
 
             <div id="music-list">
                 <div id="music-line1" />
@@ -67,7 +65,6 @@ const HomeMusic = () => {
                     title="LIVE LOUDER"
                     duration="3:15"
                 />
-                
             </div>
         </div>
     );
