@@ -24,6 +24,7 @@
 #malik-hero-info h1 {
     font-size: 80px;
     margin: 0 0 15px;
+    color: var(--white);
 }
 
 #malik-hero-info h3 {
@@ -31,6 +32,7 @@
     font-weight: normal;
     letter-spacing: 6px;
     line-height: 1.4;
+    color: var(--white);
 }
 
 #malik-story {
